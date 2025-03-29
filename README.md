@@ -1,60 +1,49 @@
-# LLM Chatbot
+# AI Quiz Generator
 
-![LLM Chatbot](https://icp.ninja/examples/_attachments/llm_chatbot.png)
+AI Quiz Generator adalah aplikasi berbasis web yang memungkinkan pengguna untuk menghasilkan pertanyaan secara otomatis berdasarkan topik yang dimasukkan, serta mengevaluasi jawaban yang diberikan menggunakan model AI.
 
-The LLM Chatbot example demonstrates how an ICP smart contract can be used to interact with a large language model (LLM) to generate text. The user can input a prompt, and the smart contract will use the LLM to generate a response.
-The response is then returned to the user, and the user can submit some follow-up prompts to continue the conversation.
+## 🚀 Fitur Utama
+- **Generate Questions**: Buat pertanyaan berdasarkan topik pilihan pengguna.
+- **Evaluate Answers**: AI mengevaluasi jawaban yang diberikan.
+- **Modern UI**: Desain futuristik dengan efek glassmorphism dan animasi.
+- **Responsive Design**: Tampilan yang dioptimalkan untuk berbagai perangkat.
 
-This application's logic is written in [Motoko](https://internetcomputer.org/docs/motoko/main/getting-started/motoko-introduction), a programming language designed specifically for developing canisters on ICP.
+## 🛠️ Teknologi yang Digunakan
+- **Frontend**: React (Tailwind CSS untuk styling)
+- **Backend**: Motoko (ICP Ninja)
+- **Deployment**: Internet Computer Protocol (ICP)
 
-## What is ICP Ninja?
+## 📦 Instalasi dan Menjalankan Proyek
 
-ICP Ninja is a web-based integrated development environment (IDE) for the Internet Computer. It allows you to write code and deploy applications directly from your web browser in a temporary, sandbox-like environment.
-
-For users who may already be familiar with the Internet Computer or who would rather use more **advanced tooling** such as command-line development tools, please refer to the [ICP developer documentation](https://internetcomputer.org/docs/building-apps/getting-started/install) to learn more.
-
-Projects deployed to ICP from ICP Ninja are available on the mainnet for 20 minutes at a time. After 20 minutes, the project must be redeployed.
-
-To deploy your project for long-term, production use such that it persists longer than 20 minutes without needing to be redeployed, you must migrate the files off of ICP Ninja and deploy them to the mainnet via `dfx` in a command-line environment.
-
-## Project structure
-
-The `/backend` folder contains the Motoko canister, `app.mo`. The `/frontend` folder contains web assets for the application's user interface. The user interface is written using the React framework. Edit the `mops.toml` file to add [Motoko dependencies](https://mops.one/) to the project.
-
-## Deploying from ICP Ninja
-
-When viewing this project in ICP Ninja, you can deploy it directly to the mainnet for free by clicking "Deploy" in the upper right corner.
-
-To **download** or **reset** the project files, click the menu option next to the deploy button.
-
-## Editing files
-
-To make adjustments to this project, you can edit any file that is unlocked. Then, redeploy your application to view your changes.
-
-To edit files that are immutable in ICP Ninja, you can export the project to GitHub or download the project to your local environment using the "Download files" option.
-
-## Build and deploy from the command-line
-
-To migrate your ICP Ninja project off of the web browser and develop it locally, follow these steps. These steps are necessary if you want to deploy this project for long-term, production use on the mainnet.
-
-### 1. Download your project from ICP Ninja using the 'Download files' button on the upper left corner under the pink ninja star icon.
-
-### 2. Setting up Ollama
-
-To be able to test the agent locally, you'll need a server for processing the agent's prompts. For that, we'll use `ollama`, which is a tool that can download and serve LLMs.
-See the documentation on the [Ollama website](https://ollama.com/) to install it. Once it's installed, run:
-
-```
-ollama serve
-# Expected to start listening on port 11434
+### 1. Clone repository ini
+```sh
+git clone https://github.com/username/ai-quiz-generator.git
+cd ai-quiz-generator
 ```
 
-The above command will start the Ollama server, so that it can process requests by the agent. Additionally, and in a separate window, run the following command to download the LLM that will be used by the agent:
-
+### 2. Install dependencies
+```sh
+npm install
 ```
-ollama run llama3.1:8b
+
+### 3. Jalankan proyek secara lokal
+```sh
+npm run dev
 ```
 
-The above command will download an 8B parameter model, which is around 4GiB. Once the command executes and the model is loaded, you can terminate it. You won't need to do this step again.
+## 🎨 Tampilan UI
+Proyek ini menggunakan **tema dark modern** dengan **efek glassmorphism**, serta **animasi background** yang memberikan pengalaman interaktif.
 
-### 3. Open the `BUILD.md` file for further instructions.
+## 🤝 Kontribusi
+Kami selalu terbuka untuk kontribusi! Jika ingin menambahkan fitur atau melakukan perbaikan, silakan:
+1. Fork repository ini
+2. Buat branch baru (`git checkout -b feature-namaFitur`)
+3. Commit perubahan (`git commit -m 'Menambahkan fitur XYZ'`)
+4. Push ke branch (`git push origin feature-namaFitur`)
+5. Buat Pull Request
+
+## 📞 Kontak
+Jika ada pertanyaan atau saran, hubungi:
+- **GitHub**: [Dirch4](https://github.com/dirch4)
+- **Email**: dimasnurcahya478@gmail.com
+
