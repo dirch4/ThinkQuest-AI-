@@ -17,8 +17,8 @@ AI Quiz Generator adalah aplikasi berbasis web yang memungkinkan pengguna untuk 
 
 ### 1. Clone repository ini
 ```sh
-git clone https://github.com/username/ai-quiz-generator.git
-cd ai-quiz-generator
+git clone https://github.com/dirch4/ThinkQuestAI.git
+cd ThinkQuestAI
 ```
 
 ### 2. Install dependencies
