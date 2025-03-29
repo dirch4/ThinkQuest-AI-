@@ -1,4 +1,4 @@
-# AI Quiz Generator
+# ThinkQuestAI ( AI Quiz Generator )
 
 AI Quiz Generator adalah aplikasi berbasis web yang memungkinkan pengguna untuk menghasilkan pertanyaan secara otomatis berdasarkan topik yang dimasukkan, serta mengevaluasi jawaban yang diberikan menggunakan model AI.
 
